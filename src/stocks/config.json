@@ -1,0 +1,24 @@
+{
+    "DataFile": "abb_train.dat",
+    "NetFile": "know.net",
+    "Layers":  [30,60,60,60,30,6],
+	"MaxEpochs": 100000,
+	"EpochsBetweenReports": 1,
+    "DesiredError": 0.0001,
+	"SqlRowFile": "abb.data",
+	"TrainOutFile": "abb.train",
+	"MinPrice": 70,
+	"MaxPrice": 210
+}
+_comment : {
+    "DataFile": "Training data file used for training"
+    "NetFile": "Network conf file used as training output or test input conf."
+    "Layers":  "ANN layers, input neurons, [] hidden, output neurons"
+	"MaxEpochs": 1000,
+	"EpochsBetweenReports": 1,
+    "DesiredError": 0.00001,
+	"SqlRowFile": "Sql dump, usually prices, one price per line. used to generate training file."
+	"TrainOutFile": "A training file generated from the Sql dump above."
+	"MinPrice": "Minimum price used for normalization into fannType"
+	"MaxPrice": "same as above."
+}
